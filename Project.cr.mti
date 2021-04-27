@@ -1,0 +1,327 @@
+C:/Modelsim_projects/EE552_Homework/Project/Queue.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/Queue.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package Queue_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module Queue
+
+Top level modules:
+	Queue
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/system_control.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/system_control.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module system_control
+
+Top level modules:
+	system_control
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/router_tb.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/router_tb.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package router_tb_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module tb_router
+
+Top level modules:
+	tb_router
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/network_on_chip_tb.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/network_on_chip_tb.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package network_on_chip_tb_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module tb_noc
+
+Top level modules:
+	tb_noc
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/data_bucket.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/data_bucket.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module data_bucket
+
+Top level modules:
+	data_bucket
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/PE_split.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/PE_split.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package PE_split_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module PE_split
+
+Top level modules:
+	PE_split
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/filt_mem_PE.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/filt_mem_PE.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package filt_mem_PE_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module filt_mem_PE
+
+Top level modules:
+	filt_mem_PE
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/Memory_Wrapper.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/Memory_Wrapper.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package Memory_Wrapper_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module Memory_Wrapper
+
+Top level modules:
+	Memory_Wrapper
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/memory.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/memory.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module memory
+
+Top level modules:
+	memory
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/PSum_Adder_Safe.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/PSum_Adder_Safe.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package PSum_Adder_Safe_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module Psum_Adder_Safe
+
+Top level modules:
+	Psum_Adder_Safe
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/PSum_Adder_Safe_Wrapper.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/PSum_Adder_Safe_Wrapper.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package PSum_Adder_Safe_Wrapper_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module Psum_Adder_Safe_Wrapper
+
+Top level modules:
+	Psum_Adder_Safe_Wrapper
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/Buffer.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/Buffer.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Buffer
+
+Top level modules:
+	Buffer
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/data_gen_packet.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/data_gen_packet.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package data_gen_packet_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module data_gen_packet
+
+Top level modules:
+	data_gen_packet
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/pe_tb.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/pe_tb.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package pe_tb_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module PE_tb
+-- Compiling module PE_packet_bucket
+-- Compiling module PE_packet_gen
+
+Top level modules:
+	PE_tb
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/SystemVerilogCSP.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/SystemVerilogCSP.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package SystemVerilogCSP
+-- Compiling interface Channel
+-- Compiling package SystemVerilogCSP_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling interface Channel
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/P_PE.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/P_PE.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package P_PE_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module P_PE
+
+Top level modules:
+	P_PE
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/PE_adder.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/PE_adder.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package PE_adder_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module PE_adder
+
+Top level modules:
+	PE_adder
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/tb_merge.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/tb_merge.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package tb_merge_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module tb_merge
+
+Top level modules:
+	tb_merge
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/data_bucket_packet.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/data_bucket_packet.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package data_bucket_packet_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module data_bucket_packet
+
+Top level modules:
+	data_bucket_packet
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/arbiter_tb.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/arbiter_tb.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package arbiter_tb_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module tb_arbiter
+
+Top level modules:
+	tb_arbiter
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/tb_arbitrated_merge.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/tb_arbitrated_merge.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package tb_arbitrated_merge_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module tb_arbitrated_merge
+
+Top level modules:
+	tb_arbitrated_merge
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/Integrated_Modules.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/Integrated_Modules.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package Integrated_Modules_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module Integrated_Modules
+
+Top level modules:
+	Integrated_Modules
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/P_adder.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/P_adder.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package P_adder_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module P_adder
+
+Top level modules:
+	P_adder
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/multiplier.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/multiplier.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package multiplier_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module multiplier
+
+Top level modules:
+	multiplier
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/tb_switch.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/tb_switch.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package tb_switch_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module tb_switch
+
+Top level modules:
+	tb_switch
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/testbench.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/testbench.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package testbench_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module ctrl_tb
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/DP_PE.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/DP_PE.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package DP_PE_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module DP_PE
+
+Top level modules:
+	DP_PE
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/accumulator.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/accumulator.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package accumulator_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module accumulator
+
+Top level modules:
+	accumulator
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/DP_Adder_Safe.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/DP_Adder_Safe.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package DP_Adder_Safe_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module DP_Adder_Safe
+
+Top level modules:
+	DP_Adder_Safe
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/network_on_chip.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/network_on_chip.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package network_on_chip_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module arbiter
+-- Compiling module merge
+-- Compiling module arbitrated_merge
+-- Compiling module switch
+-- Compiling module router
+-- Compiling module noc_top_level
+
+Top level modules:
+	noc_top_level
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/Psum_Adder_tb.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/Psum_Adder_tb.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package Psum_Adder_tb_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module Psum_Adder_tb
+-- Compiling module Psum_bucket
+-- Compiling module Psum_gen
+
+Top level modules:
+	Psum_Adder_tb
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/pix_mem_PE.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/pix_mem_PE.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package pix_mem_PE_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module pix_mem_PE
+
+Top level modules:
+	pix_mem_PE
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/data_gen.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/data_gen.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module data_gen
+
+Top level modules:
+	data_gen
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/DP_adder.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/DP_adder.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package DP_adder_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module DP_adder
+
+Top level modules:
+	DP_adder
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/Psum_Adder.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/Psum_Adder.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package Psum_Adder_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module Psum_Adder
+
+Top level modules:
+	Psum_Adder
+
+} {} {}} C:/Modelsim_projects/EE552_Homework/Project/Psum_Adder_Wrapper.sv {1 {vlog -work work -sv -stats=none C:/Modelsim_projects/EE552_Homework/Project/Psum_Adder_Wrapper.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package Psum_Adder_Wrapper_sv_unit
+-- Importing package SystemVerilogCSP
+-- Compiling module Psum_Adder_Wrapper
+
+Top level modules:
+	Psum_Adder_Wrapper
+
+} {} {}}

@@ -1,0 +1,206 @@
+filter memory: mem[ 0]=   1
+filter memory: mem[ 1]=   2
+filter memory: mem[ 2]=   3
+filter memory: mem[ 3]=   4
+filter memory: mem[ 4]=   5
+filter memory: mem[ 5]=   6
+filter memory: mem[ 6]=   7
+filter memory: mem[ 7]=   8
+filter memory: mem[ 8]=   9
+ifmap memory: mem[          9]=   1
+ifmap memory: mem[         10]=   2
+ifmap memory: mem[         11]=   3
+ifmap memory: mem[         12]=   4
+ifmap memory: mem[         13]=   5
+ifmap memory: mem[         14]=   5
+ifmap memory: mem[         15]=   4
+ifmap memory: mem[         16]=   3
+ifmap memory: mem[         17]=   2
+ifmap memory: mem[         18]=   1
+ifmap memory: mem[         19]=   1
+ifmap memory: mem[         20]=   2
+ifmap memory: mem[         21]=   3
+ifmap memory: mem[         22]=   4
+ifmap memory: mem[         23]=   5
+ifmap memory: mem[         24]=   5
+ifmap memory: mem[         25]=   4
+ifmap memory: mem[         26]=   3
+ifmap memory: mem[         27]=   2
+ifmap memory: mem[         28]=   1
+ifmap memory: mem[         29]=   1
+ifmap memory: mem[         30]=   2
+ifmap memory: mem[         31]=   3
+ifmap memory: mem[         32]=   4
+ifmap memory: mem[         33]=   5
+comp[          0]= 122
+comp[          1]= 137
+comp[          2]= 152
+comp[          3]= 148
+comp[          4]= 133
+comp[          5]= 118
+comp[          6]= 122
+comp[          7]= 137
+comp[          8]= 152
+testbench.tb sent start token at              0.10 ns
+testbench.sys_ctrl start token received at              0.10 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   1 at             10.00 ns 
+testbench.mem sent data   2 at             22.00 ns 
+testbench.mem sent data   3 at             34.00 ns 
+testbench.mem sent data   4 at             46.00 ns 
+testbench.mem sent data   5 at             58.00 ns 
+testbench.mem sent data   6 at             70.00 ns 
+testbench.mem sent data   7 at             82.00 ns 
+testbench.mem sent data   8 at             94.00 ns 
+testbench.mem sent data   9 at            106.00 ns 
+testbench.mem sent data   1 at            118.00 ns 
+testbench.mem sent data   2 at            130.00 ns 
+testbench.mem sent data   3 at            142.00 ns 
+testbench.mem sent data   4 at            154.00 ns 
+testbench.mem sent data   5 at            166.00 ns 
+testbench.mem sent data   5 at            178.00 ns 
+testbench.mem sent data   4 at            190.00 ns 
+testbench.mem sent data   3 at            202.00 ns 
+testbench.mem sent data   2 at            214.00 ns 
+testbench.mem sent data   1 at            226.00 ns 
+testbench.mem sent data   1 at            238.00 ns 
+testbench.mem sent data   2 at            250.00 ns 
+testbench.mem sent data   3 at            262.00 ns 
+testbench.mem sent data   4 at            274.00 ns 
+testbench.mem sent data   5 at            286.00 ns 
+testbench.mem sent data   5 at            298.00 ns 
+testbench.mem sent data   4 at            310.00 ns 
+testbench.mem sent data   3 at            322.00 ns 
+testbench.mem sent data   2 at            334.00 ns 
+testbench.mem sent data   1 at            346.00 ns 
+testbench.mem sent data   1 at            358.00 ns 
+testbench.mem sent data   2 at            370.00 ns 
+testbench.mem sent data   3 at            382.00 ns 
+testbench.mem sent data   4 at            394.00 ns 
+testbench.mem sent data   5 at            406.00 ns 
+testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            122.00 ns 
+501testbench.mem received data at            137.00 ns 
+505testbench.mem received data at            152.00 ns 
+509testbench.mem received data at            104.00 ns 
+513testbench.mem received data at              0.00 ns 
+517testbench.mem received data at              0.00 ns 
+521testbench.mem received data at              0.00 ns 
+525testbench.mem received data at              0.00 ns 
+529testbench.mem received data at              0.00 ns 
+533testbench.sys_ctrl sent done token at            533.10 ns 
+testbench.tb done token received at            533.10 ns
+104 != 148 error!
+mem[        204] = 104 == comp[          3] = 148
+  x != 133 error!
+mem[        205] =   x == comp[          4] = 133
+  x != 118 error!
+mem[        206] =   x == comp[          5] = 118
+  x != 122 error!
+mem[        207] =   x == comp[          6] = 122
+  x != 137 error!
+mem[        208] =   x == comp[          7] = 137
+  x != 152 error!
+mem[        209] =   x == comp[          8] = 152
+total errors =           6
+testbench.tb Results compared, ending simulation at            533.10 ns

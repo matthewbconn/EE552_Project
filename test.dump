@@ -1,0 +1,17 @@
+mem[        201] = 122 == comp[          0] = 122
+mem[        202] = 137 == comp[          1] = 137
+mem[        203] = 152 == comp[          2] = 152
+104 != 148 error!
+mem[        204] = 104 == comp[          3] = 148
+  x != 133 error!
+mem[        205] =   x == comp[          4] = 133
+  x != 118 error!
+mem[        206] =   x == comp[          5] = 118
+  x != 122 error!
+mem[        207] =   x == comp[          6] = 122
+  x != 137 error!
+mem[        208] =   x == comp[          7] = 137
+  x != 152 error!
+mem[        209] =   x == comp[          8] = 152
+total errors =           6
+testbench.tb Results compared, ending simulation at            533.10 ns
