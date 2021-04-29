@@ -13,7 +13,7 @@ module Memory_Wrapper #(parameter DWIDTH = 8, parameter PWIDTH = 47)
   logic ifm_filt;
   logic [2:0] Dest_Addr;
   logic [2:0] Source_Addr;
-  logic [DWIDTH-1:0] result [3:0];
+  logic [DWIDTH-1:0] result [8:0];
   integer i, j, OFF_SET;
   integer pixel_frame_counter = 1;
   
@@ -114,9 +114,11 @@ pixel_frame_counter = pixel_frame_counter + 1;
 $display("%m completed sends of ALL pixels to NoC");
 
 	// Get results back
+$display("Memory Wrapper getting results back:");
 	for (i = 0; i < 9; i = i + 1) begin
 		Packet_from_NoC.Receive(packet);
 		result[i] = packet[DWIDTH-1:0];
+$display("\t%m res[%d] = %d",i, result[i]);
 	end
  
 	OFF_SET = 200;

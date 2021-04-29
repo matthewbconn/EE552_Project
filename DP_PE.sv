@@ -15,15 +15,16 @@ module DP_PE #(parameter DWIDTH = 8, parameter PWIDTH = 47) (interface In, inter
   begin
 	In.Receive(packet);
 	//$display("\tPacket received: %b",packet);
-	$display("\t%m received ifm(1)/filt(0): %b from source %b...time is %d", packet[PWIDTH-1],packet[42:40],$time);
+//	$display("\t%m received ifm(1)/filt(0): %b from source %b...time is %d", packet[PWIDTH-1],packet[42:40],$time);
 	#FL;
 // TO DO add conditional send to pixel mem or filt mem
 	if (packet[PWIDTH-1] == 1'b1) begin // packet contains pixels (need 40 bits)
 		pix = packet[5*DWIDTH-1:0];
 //		$display("DePacketizer passing pixel data");
+		$display("\t\t%m XYXY (addr %b) received pixels [%d, %d, %d %d %d] from addr %b.  , time: %d", packet[45:43],  packet[39:32], packet[31:24], packet[23:16], packet[15:8], packet[7:0], packet[42:40], $realtime);
 		Pixel_Out.Send(pix);
 	end else begin // packet contains filters (need 24 bits)
-		$display("\t\t%m XYXY (addr %b) received filters from addr %b at %d", packet[45:43], packet[42:40], $realtime);
+		$display("\t\t%m XYXY (addr %b) received filters [%d, %d, %d] from addr %b.  , time: %d", packet[45:43],  packet[23:16], packet[15:8], packet[7:0], packet[42:40], $realtime);
 		filt = packet[3*DWIDTH-1:0];
 //		$display("DePacketizer passing filter data");
 		Filter_out.Send(filt);

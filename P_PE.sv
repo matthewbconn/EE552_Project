@@ -15,10 +15,12 @@ module P_PE #(parameter DWIDTH = 8, parameter PWIDTH = 47, parameter PE_Index = 
   logic [DWIDTH-1:0] Psum;
   logic IFM_one_FILT_zero;
   integer i = 0;
+  logic [1:0] it_counter = 0;
   
   always
   begin
     Adder_Node_Addr = 4;
+    it_counter = 0;
     if (PE_Index == 0) begin
 	This_PE_Addr = 3;//3b'011;
 	Next_PE_Addr = 1;//3b'001;
@@ -36,13 +38,15 @@ module P_PE #(parameter DWIDTH = 8, parameter PWIDTH = 47, parameter PE_Index = 
     while (1) begin
 	    for (i = 0; i < numPSums; i = i + 1) begin
 		PSum_In.Receive(Psum);
-		$display("%m received (relative) psum %d at time %d", i, $realtime);
+//		$display("%m received (relative) psum %d at time %d", i, $realtime);
 		IFM_one_FILT_zero = 1;
 		#FL;
 	//		      ifm/filt,      ADDER NOde = dest,   source,       data (upper 32b = x) 
 		packet = {IFM_one_FILT_zero,   Adder_Node_Addr,   This_PE_Addr,    32'hFFFF , Psum};
 		Out.Send(packet);
-		$display("%m sent out (relative) psum %d at time %d", i, $realtime);
+		if (This_PE_Addr == 0) begin // debugging PE2
+		$display("%m sent out (relative) psum %d at time %d", i, $realtime);		
+		end
 		#BL;
 	    end // for loop
 
@@ -51,10 +55,13 @@ module P_PE #(parameter DWIDTH = 8, parameter PWIDTH = 47, parameter PE_Index = 
 	    #FL;
 	//		ifm/filt,           dest,           source,       data (upper 32b = x) 
 	    packet = {IFM_one_FILT_zero,   Next_PE_Addr,   This_PE_Addr,    8'h0,    8'h0 , filter_frame};
-	    Out.Send(packet);
-		$display("\t\t%m  XYXY PEaddr(%b)sending filters to next PEaddr(%b) at time %d", This_PE_Addr,Next_PE_Addr,$realtime);
-	    #BL;
 
+//	    if (it_counter < 2) begin // don't pass on filters once we're done
+	    Out.Send(packet);
+		$display("\t\t%m  XYXY PEaddr(%b)sending filters [%d,%d,%d] to next PEaddr(%b) at time %d", This_PE_Addr,filter_frame[23:16],filter_frame[15:8],filter_frame[7:0],Next_PE_Addr,$realtime);
+		it_counter = it_counter + 1;
+//	    end
+	    #BL;
     
 
     end // while

@@ -1,0 +1,314 @@
+# vsim 
+# Start time: 16:07:43 on Apr 28,2021
+# Loading sv_std.std
+# Loading work.SystemVerilogCSP
+# Loading work.testbench_sv_unit
+# Loading work.testbench
+# Loading work.ctrl_tb
+# Loading work.memory
+# Loading work.system_control
+# Loading work.Memory_Wrapper_sv_unit
+# Loading work.Memory_Wrapper
+# Loading work.Integrated_Modules_sv_unit
+# Loading work.Integrated_Modules
+# Loading work.network_on_chip_sv_unit
+# Loading work.noc_top_level
+# Loading work.router
+# Loading work.switch
+# Loading work.arbitrated_merge
+# Loading work.arbiter
+# Loading work.merge
+# Loading work.PE_wrapper_sv_unit
+# Loading work.PE_Wrapper
+# Loading work.DP_PE_sv_unit
+# Loading work.DP_PE
+# Loading work.Buffer
+# Loading work.filt_mem_PE_sv_unit
+# Loading work.filt_mem_PE
+# Loading work.pix_mem_PE_sv_unit
+# Loading work.pix_mem_PE
+# Loading work.multiplier_sv_unit
+# Loading work.multiplier
+# Loading work.PE_adder_sv_unit
+# Loading work.PE_adder
+# Loading work.accumulator_sv_unit
+# Loading work.accumulator
+# Loading work.PE_split_sv_unit
+# Loading work.PE_split
+# Loading work.P_PE_sv_unit
+# Loading work.P_PE
+# Loading work.PSum_Adder_Safe_Wrapper_sv_unit
+# Loading work.Psum_Adder_Safe_Wrapper
+# Loading work.DP_Adder_Safe_sv_unit
+# Loading work.DP_Adder_Safe
+# Loading work.Queue_sv_unit
+# Loading work.Queue
+# Loading work.PSum_Adder_Safe_sv_unit
+# Loading work.Psum_Adder_Safe
+# Loading work.P_adder_sv_unit
+# Loading work.P_adder
+# Loading work.SystemVerilogCSP_sv_unit
+# Loading work.Channel
+# fpf data read:  1
+# PE 0 packetizer instantiated
+# PE 1 packetizer instantiated
+# PE 2 packetizer instantiated
+# filter memory: mem[ 0]=   1
+# addr_filter= 1
+# fpf data read:  2
+# filter memory: mem[ 1]=   2
+# addr_filter= 2
+# fpf data read:  3
+# filter memory: mem[ 2]=   3
+# addr_filter= 3
+# fpf data read:  4
+# filter memory: mem[ 3]=   4
+# addr_filter= 4
+# fpf data read:  5
+# filter memory: mem[ 4]=   5
+# addr_filter= 5
+# fpf data read:  6
+# filter memory: mem[ 5]=   6
+# addr_filter= 6
+# fpf data read:  7
+# filter memory: mem[ 6]=   7
+# addr_filter= 7
+# fpf data read:  8
+# filter memory: mem[ 7]=   8
+# addr_filter= 8
+# fpf data read:  9
+# filter memory: mem[ 8]=   9
+# addr_filter= 9
+# testbench.tbFinished writing filter data to memory, about to begin writing pixels
+# fpi data read:  1
+# ifmap memory: mem[          9]=   1
+# fpi data read:  2
+# ifmap memory: mem[         10]=   2
+# fpi data read:  3
+# ifmap memory: mem[         11]=   3
+# fpi data read:  4
+# ifmap memory: mem[         12]=   4
+# fpi data read:  5
+# ifmap memory: mem[         13]=   5
+# fpi data read:  5
+# ifmap memory: mem[         14]=   5
+# fpi data read:  4
+# ifmap memory: mem[         15]=   4
+# fpi data read:  3
+# ifmap memory: mem[         16]=   3
+# fpi data read:  2
+# ifmap memory: mem[         17]=   2
+# fpi data read:  1
+# ifmap memory: mem[         18]=   1
+# fpi data read:  1
+# ifmap memory: mem[         19]=   1
+# fpi data read:  2
+# ifmap memory: mem[         20]=   2
+# fpi data read:  3
+# ifmap memory: mem[         21]=   3
+# fpi data read:  4
+# ifmap memory: mem[         22]=   4
+# fpi data read:  5
+# ifmap memory: mem[         23]=   5
+# fpi data read:  5
+# ifmap memory: mem[         24]=   5
+# fpi data read:  4
+# ifmap memory: mem[         25]=   4
+# fpi data read:  3
+# ifmap memory: mem[         26]=   3
+# fpi data read:  2
+# ifmap memory: mem[         27]=   2
+# fpi data read:  1
+# ifmap memory: mem[         28]=   1
+# fpi data read:  1
+# ifmap memory: mem[         29]=   1
+# fpi data read:  2
+# ifmap memory: mem[         30]=   2
+# fpi data read:  3
+# ifmap memory: mem[         31]=   3
+# fpi data read:  4
+# ifmap memory: mem[         32]=   4
+# fpi data read:  5
+# ifmap memory: mem[         33]=   5
+# testbench.tb finished writing pixel data to memory
+# fpi_r data read:122
+# comp[          0]= 122
+# fpi_r data read:137
+# comp[          1]= 137
+# fpi_r data read:152
+# comp[          2]= 152
+# fpi_r data read:148
+# comp[          3]= 148
+# fpi_r data read:133
+# comp[          4]= 133
+# fpi_r data read:118
+# comp[          5]= 118
+# fpi_r data read:122
+# comp[          6]= 122
+# fpi_r data read:137
+# comp[          7]= 137
+# fpi_r data read:152
+# comp[          8]= 152
+# testbench.tb sent start token at              0.10 ns
+# testbench.sys_ctrl start token received at              0.10 ns 
+# 
+# 		testbench.NoC_minus_Mem.PE_Block0.depacketizer XYXY (addr 011) received filters [  1,   2,   3] from addr 110.  , time:         43
+# 		testbench.NoC_minus_Mem.PE_Block1.depacketizer XYXY (addr 001) received filters [  4,   5,   6] from addr 110.  , time:         83
+# testbench.mem_wrapped completed sends of all 3 pixel frames to NoC
+# 		testbench.NoC_minus_Mem.PE_Block2.depacketizer XYXY (addr 000) received filters [  7,   8,   9] from addr 110.  , time:        119
+# 		testbench.NoC_minus_Mem.PE_Block0.depacketizer XYXY (addr 011) received pixels [  1,   2,   3   4   5] from addr 110.  , time:        175
+# 	testbench.NoC_minus_Mem.PE_Block0.Pixel_Memory received pixels
+# testbench.NoC_minus_Mem.PE_Block0.Pixel_Memory pixels first_usage, iter. j =           0, at        177
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 011 at time        205
+# 	testbench.NoC_minus_Mem.PE_Block0.Pixel_Memory completed individual sends, pixel frame ready to be discarded
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 011 at time        217
+# 	testbench.NoC_minus_Mem.PE_Block0.Filter_Memory completed filter frame send at time        217
+# 		testbench.NoC_minus_Mem.PE_Block0.Packetizer  XYXY PEaddr(011)sending filters [  1,  2,  3] to next PEaddr(001) at time        219
+# 		testbench.NoC_minus_Mem.PE_Block1.depacketizer XYXY (addr 001) received filters [  1,   2,   3] from addr 011.  , time:        228
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 011 at time        229
+# 		testbench.NoC_minus_Mem.PE_Block1.depacketizer XYXY (addr 001) received pixels [  5,   4,   3   2   1] from addr 110.  , time:        239
+# 	testbench.NoC_minus_Mem.PE_Block1.Pixel_Memory received pixels
+# testbench.NoC_minus_Mem.PE_Block1.Pixel_Memory pixels first_usage, iter. j =           0, at        241
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 001 at time        269
+# testbench.NoC_minus_Mem.PE_Block1.Pixel_Memory pixels first_usage, iter. j =           1, at        277
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 001 at time        281
+# 	testbench.NoC_minus_Mem.PE_Block1.Filter_Memory completed filter frame send at time        281
+# 		testbench.NoC_minus_Mem.PE_Block1.Packetizer  XYXY PEaddr(001)sending filters [  4,  5,  6] to next PEaddr(000) at time        283
+# 		testbench.NoC_minus_Mem.PE_Block2.depacketizer XYXY (addr 000) received filters [  4,   5,   6] from addr 001.  , time:        292
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 001 at time        293
+# 		testbench.NoC_minus_Mem.PE_Block2.depacketizer XYXY (addr 000) received pixels [  1,   2,   3   4   5] from addr 110.  , time:        299
+# 	testbench.NoC_minus_Mem.PE_Block2.Pixel_Memory received pixels
+# testbench.NoC_minus_Mem.PE_Block2.Pixel_Memory pixels first_usage, iter. j =           0, at        301
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 001 at time        309
+# testbench.NoC_minus_Mem.PE_Block2.Packetizer sent out (relative) psum           0 at time        316
+# 	testbench.NoC_minus_Mem.PE_Block1.Pixel_Memory completed individual sends, pixel frame ready to be discarded
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 001 at time        321
+# 	testbench.NoC_minus_Mem.PE_Block1.Filter_Memory completed filter frame send at time        321
+# 		testbench.NoC_minus_Mem.PE_Block1.Packetizer  XYXY PEaddr(001)sending filters [  1,  2,  3] to next PEaddr(000) at time        323
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 000 at time        325
+# testbench.NoC_minus_Mem.PE_Block2.Packetizer sent out (relative) psum           1 at time        328
+# 		testbench.NoC_minus_Mem.PE_Block2.depacketizer XYXY (addr 000) received filters [  1,   2,   3] from addr 001.  , time:        332
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 001 at time        333
+# testbench.NoC_minus_Mem.PE_Block2.Pixel_Memory pixels first_usage, iter. j =           1, at        337
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 000 at time        337
+# testbench.NoC_minus_Mem.PE_Block2.Packetizer sent out (relative) psum           2 at time        340
+# 	testbench.NoC_minus_Mem.PE_Block2.Filter_Memory completed filter frame send at time        341
+# 		testbench.NoC_minus_Mem.PE_Block2.Packetizer  XYXY PEaddr(000)sending filters [  7,  8,  9] to next PEaddr(011) at time        343
+# testbench.NoC_minus_Mem.Safe_Adder_Block.safe_adder ghgh received           1 th psums: PE0=  14, PE1=  58, PE2=  50 = 122 @        347
+# Final Output           1 Packetizer passing result = 122
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 000 at time        349
+# 		testbench.NoC_minus_Mem.PE_Block0.depacketizer XYXY (addr 011) received pixels [  5,   4,   3   2   1] from addr 110.  , time:        355
+# testbench.NoC_minus_Mem.PE_Block2.Packetizer sent out (relative) psum           0 at time        356
+# 	testbench.NoC_minus_Mem.PE_Block0.Pixel_Memory received pixels
+# testbench.NoC_minus_Mem.PE_Block0.Pixel_Memory pixels not first_usage, iter. j =           0, at        357
+# 		testbench.NoC_minus_Mem.PE_Block0.depacketizer XYXY (addr 011) received filters [  7,   8,   9] from addr 000.  , time:        358
+# testbench.NoC_minus_Mem.Safe_Adder_Block.safe_adder ghgh received           2 th psums: PE0=  20, PE1=  43, PE2=  74 = 137 @        359
+# Final Output           2 Packetizer passing result = 137
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 000 at time        365
+# testbench.NoC_minus_Mem.PE_Block2.Packetizer sent out (relative) psum           1 at time        368
+# testbench.NoC_minus_Mem.Safe_Adder_Block.safe_adder ghgh received           3 th psums: PE0=  26, PE1=  28, PE2=  98 = 152 @        371
+# Final Output           3 Packetizer passing result = 152
+# testbench.NoC_minus_Mem.PE_Block2.Pixel_Memory pixels first_usage, iter. j =           2, at        377
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 000 at time        377
+# testbench.NoC_minus_Mem.PE_Block2.Packetizer sent out (relative) psum           2 at time        380
+# 	testbench.NoC_minus_Mem.PE_Block2.Filter_Memory completed filter frame send at time        381
+# 		testbench.NoC_minus_Mem.PE_Block2.Packetizer  XYXY PEaddr(000)sending filters [  4,  5,  6] to next PEaddr(011) at time        383
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 011 at time        388
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 000 at time        391
+# testbench.NoC_minus_Mem.PE_Block0.Pixel_Memory pixels not first_usage, iter. j =           1, at        396
+# 		testbench.NoC_minus_Mem.PE_Block0.depacketizer XYXY (addr 011) received filters [  4,   5,   6] from addr 000.  , time:        396
+# testbench.NoC_minus_Mem.PE_Block2.Packetizer sent out (relative) psum           0 at time        396
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 011 at time        400
+# 	testbench.NoC_minus_Mem.PE_Block0.Filter_Memory completed filter frame send at time        400
+# 		testbench.NoC_minus_Mem.PE_Block0.Packetizer  XYXY PEaddr(011)sending filters [  7,  8,  9] to next PEaddr(001) at time        402
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 000 at time        405
+# testbench.mem_wrapped completed sends of ALL pixels to NoC
+# Memory Wrapper getting results back:
+# 	testbench.mem_wrapped res[          0] = 122
+# testbench.NoC_minus_Mem.PE_Block2.Packetizer sent out (relative) psum           1 at time        408
+# 	testbench.mem_wrapped res[          1] = 137
+# testbench.NoC_minus_Mem.Safe_Adder_Block.safe_adder ghgh received           4 th psums: PE0=  94, PE1=  22, PE2=  32 = 148 @        410
+# 		testbench.NoC_minus_Mem.PE_Block1.depacketizer XYXY (addr 001) received filters [  7,   8,   9] from addr 011.  , time:        411
+# Final Output           4 Packetizer passing result = 148
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 011 at time        412
+# 	testbench.mem_wrapped res[          2] = 152
+# 	testbench.NoC_minus_Mem.PE_Block2.Pixel_Memory completed individual sends, pixel frame ready to be discarded
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 000 at time        417
+# 		testbench.NoC_minus_Mem.PE_Block1.depacketizer XYXY (addr 001) received pixels [  1,   2,   3   4   5] from addr 110.  , time:        419
+# testbench.NoC_minus_Mem.PE_Block2.Packetizer sent out (relative) psum           2 at time        420
+# 	testbench.mem_wrapped res[          3] = 148
+# 	testbench.NoC_minus_Mem.PE_Block2.Filter_Memory completed filter frame send at time        421
+# 	testbench.NoC_minus_Mem.PE_Block1.Pixel_Memory received pixels
+# testbench.NoC_minus_Mem.PE_Block1.Pixel_Memory pixels not first_usage, iter. j =           0, at        421
+# testbench.NoC_minus_Mem.Safe_Adder_Block.safe_adder ghgh received           5 th psums: PE0=  70, PE1=  16, PE2=  47 = 133 @        422
+# 		testbench.NoC_minus_Mem.PE_Block2.Packetizer  XYXY PEaddr(000)sending filters [  1,  2,  3] to next PEaddr(011) at time        423
+# Final Output           5 Packetizer passing result = 133
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 011 at time        428
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 000 at time        431
+# 	testbench.mem_wrapped res[          4] = 133
+# testbench.NoC_minus_Mem.Safe_Adder_Block.safe_adder ghgh received           6 th psums: PE0=  46, PE1=  10, PE2=  62 = 118 @        434
+# testbench.NoC_minus_Mem.PE_Block0.Pixel_Memory pixels not first_usage, iter. j =           2, at        436
+# Final Output           6 Packetizer passing result = 118
+# 		testbench.NoC_minus_Mem.PE_Block0.depacketizer XYXY (addr 011) received filters [  1,   2,   3] from addr 000.  , time:        436
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 011 at time        440
+# 	testbench.NoC_minus_Mem.PE_Block0.Filter_Memory completed filter frame send at time        440
+# 		testbench.NoC_minus_Mem.PE_Block0.Packetizer  XYXY PEaddr(011)sending filters [  4,  5,  6] to next PEaddr(001) at time        442
+# 	testbench.mem_wrapped res[          5] = 118
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 001 at time        449
+# 		testbench.NoC_minus_Mem.PE_Block1.depacketizer XYXY (addr 001) received filters [  4,   5,   6] from addr 011.  , time:        451
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 011 at time        452
+# testbench.NoC_minus_Mem.PE_Block1.Pixel_Memory pixels not first_usage, iter. j =           1, at        457
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 001 at time        461
+# 	testbench.NoC_minus_Mem.PE_Block1.Filter_Memory completed filter frame send at time        461
+# 		testbench.NoC_minus_Mem.PE_Block1.Packetizer  XYXY PEaddr(001)sending filters [  7,  8,  9] to next PEaddr(000) at time        463
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 011 at time        468
+# testbench.NoC_minus_Mem.Safe_Adder_Block.safe_adder ghgh received           7 th psums: PE0=  58, PE1=  50, PE2=  14 = 122 @        471
+# 		testbench.NoC_minus_Mem.PE_Block2.depacketizer XYXY (addr 000) received filters [  7,   8,   9] from addr 001.  , time:        472
+# Final Output           7 Packetizer passing result = 122
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 001 at time        473
+# 	testbench.NoC_minus_Mem.PE_Block0.Pixel_Memory completed individual sends, pixel frame ready to be discarded
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 011 at time        480
+# 	testbench.NoC_minus_Mem.PE_Block0.Filter_Memory completed filter frame send at time        480
+# 	testbench.mem_wrapped res[          6] = 122
+# 		testbench.NoC_minus_Mem.PE_Block0.Packetizer  XYXY PEaddr(011)sending filters [  1,  2,  3] to next PEaddr(001) at time        482
+# testbench.NoC_minus_Mem.Safe_Adder_Block.safe_adder ghgh received           8 th psums: PE0=  43, PE1=  74, PE2=  20 = 137 @        483
+# Final Output           8 Packetizer passing result = 137
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 001 at time        489
+# 		testbench.NoC_minus_Mem.PE_Block1.depacketizer XYXY (addr 001) received filters [  1,   2,   3] from addr 011.  , time:        491
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 011 at time        492
+# 	testbench.mem_wrapped res[          7] = 137
+# testbench.NoC_minus_Mem.Safe_Adder_Block.safe_adder ghgh received           9 th psums: PE0=  28, PE1=  98, PE2=  26 = 152 @        495
+# testbench.NoC_minus_Mem.PE_Block1.Pixel_Memory pixels not first_usage, iter. j =           2, at        497
+# Final Output           9 Packetizer passing result = 152
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 001 at time        501
+# 	testbench.NoC_minus_Mem.PE_Block1.Filter_Memory completed filter frame send at time        501
+# 		testbench.NoC_minus_Mem.PE_Block1.Packetizer  XYXY PEaddr(001)sending filters [  4,  5,  6] to next PEaddr(000) at time        503
+# 	testbench.mem_wrapped res[          8] = 152
+# 		testbench.NoC_minus_Mem.PE_Block2.depacketizer XYXY (addr 000) received filters [  4,   5,   6] from addr 001.  , time:        512
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 001 at time        513
+# testbench.NoC_minus_Mem.Safe_Adder_Block.depacketizer_safe received a psum from source 001 at time        529
+# 	testbench.NoC_minus_Mem.PE_Block1.Pixel_Memory completed individual sends, pixel frame ready to be discarded
+# testbench.sys_ctrl sent done token at            537.10 ns
+#           2mem[        201] = 122 == comp[          0] = 122
+# testbench.tb result value 0: 122 received at            537.10 ns
+#           2mem[        202] = 137 == comp[          1] = 137
+# testbench.tb result value 1: 137 received at            537.10 ns
+#           2mem[        203] = 152 == comp[          2] = 152
+# testbench.tb result value 2: 152 received at            537.10 ns
+#           2mem[        204] = 148 == comp[          3] = 148
+# testbench.tb result value 3: 148 received at            537.10 ns
+#           2mem[        205] = 133 == comp[          4] = 133
+# testbench.tb result value 4: 133 received at            537.10 ns
+#           2mem[        206] = 118 == comp[          5] = 118
+# testbench.tb result value 5: 118 received at            537.10 ns
+#           2mem[        207] = 122 == comp[          6] = 122
+# testbench.tb result value 6: 122 received at            537.10 ns
+#           2mem[        208] = 137 == comp[          7] = 137
+# testbench.tb result value 7: 137 received at            537.10 ns
+#           2mem[        209] = 152 == comp[          8] = 152
+# testbench.tb result value 8: 152 received at            537.10 ns
+# total errors =           0
+# testbench.tb Results compared, ending simulation at            537.10 ns
+# ** Note: $stop    : C:/Modelsim_projects/EE552_Homework/Project/testbench.sv(149)
+#    Time: 537100 ps  Iteration: 76  Instance: /testbench/tb
+# Break in Module ctrl_tb at C:/Modelsim_projects/EE552_Homework/Project/testbench.sv line 149

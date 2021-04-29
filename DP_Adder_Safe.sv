@@ -18,13 +18,13 @@ module DP_Adder_Safe #(parameter DWIDTH = 8, parameter PWIDTH = 47) (interface I
 $display("%m received a psum from source %b at time %d", source, $realtime);	
 	if (source == 3) begin // PE0 Queue
 		Out0.Send(Psum);
-		$display("\t dispatched Psum down PE0 queue");
+//		$display("\t dispatched Psum down PE0 queue");
 	end else if (source == 1) begin // PE1 Queue
 		Out1.Send(Psum);
-		$display("\t dispatched Psum down PE1 queue");
+//		$display("\t dispatched Psum down PE1 queue");
 	end else if (source == 0) begin // PE2 Queue
 		Out2.Send(Psum);
-		$display("\t dispatched Psum down PE0 queue");
+//		$display("\t dispatched Psum down PE2 queue");
 	end
 	//$display("DePacketizer passing psum = %d", Psum);
 	#BL;

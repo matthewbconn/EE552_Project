@@ -12,7 +12,7 @@ integer i;
 
 always begin
     Filter_Frame_In.Receive(filt_frame);
-$display("\t%m received filters");
+//$display("\t%m received filters");
     single_filter[2] = filt_frame[DWIDTH*3 - 1 : DWIDTH*2];
     single_filter[1] = filt_frame[DWIDTH*2 - 1 : DWIDTH*1];
     single_filter[0] = filt_frame[DWIDTH*1 - 1 : DWIDTH*0];
@@ -27,7 +27,7 @@ $display("\t%m received filters");
     end
 
     Filter_Frame_Out.Send(filt_frame);
-$display("\t%m completed filter frame send");
+$display("\t%m completed filter frame send at time %d",$realtime);
 end //always
 endmodule
 

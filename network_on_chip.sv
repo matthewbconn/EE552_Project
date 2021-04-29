@@ -80,9 +80,9 @@ module merge (interface S, A, B, O);
 
     endcase
     #FL;
-$display("%m beginning a send...time = %d", $time);
+//$display("%m beginning a send...time = %d", $time);
     O.Send(data);
-$display("%m finished a send...time = %d", $time);	
+//$display("%m finished a send...time = %d", $time);	
     #BL;
     
   end
@@ -134,9 +134,9 @@ module switch (interface In, Out_1, Out_2);
   begin
 
     In.Receive(packet);
-	$display("%m received packet contents: %b", packet);
-    $display("Router Instance: %m");
-    $display("Router Address: %b, Mask: %b, Packet Destination: %b", address, mask, packet[45:43]);
+//    $display("%m received packet contents: %b", packet);
+//    $display("Router Instance: %m");
+//    $display("Router Address: %b, Mask: %b, Packet Destination: %b", address, mask, packet[45:43]);
 
     #FL;
 

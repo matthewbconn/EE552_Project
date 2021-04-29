@@ -24,9 +24,9 @@ module PE_split #(parameter DWIDTH = 8) (interface In, interface ACC_OUT, interf
 	// Pass out the PSum to be packetized
 	In.Receive(data);
 	#FL;
-$display("%m has a psum available, sending now...t = %d",$time);
+//$display("%m has a psum available, sending now...t = %d",$time);
 	PKT_OUT.Send(data);
-$display("%m completed send of psum...t = %d",$time);
+//$display("%m completed send of psum...t = %d",$time);
 	#BL;
   end
 
