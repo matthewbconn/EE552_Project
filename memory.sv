@@ -46,7 +46,7 @@ module memory(interface sys_data_in, sys_addr_in, sys_data_out, sys_addr_out, tb
     sys_data_in.Receive(d_in);
     mem[in_addr] = d_in;
     $fwrite(fpt,"%m received data at %t \n",d_in,$realtime);
-//    $display("%m received data at %t \n",d_in,$realtime);
+    $display("%m received data at %t \n",d_in,$realtime);
     #BL;
    end
    
@@ -54,7 +54,7 @@ module memory(interface sys_data_in, sys_addr_in, sys_data_out, sys_addr_out, tb
     sys_addr_out.Receive(out_addr);
     sys_data_out.Send(mem[out_addr]);
     $fwrite(fpt,"%m sent data %d at %t \n",mem[out_addr],$realtime);
-//    $display("%m sent data %d at %t \n",mem[out_addr],$realtime);
+    $display("%m sent data %d at %t \n",mem[out_addr],$realtime);
     #FL;
    end
 
@@ -62,14 +62,14 @@ module memory(interface sys_data_in, sys_addr_in, sys_data_out, sys_addr_out, tb
    begin // populate the memory
     tb_addr_in.Receive(in_addr);
     tb_data_in.Receive(d_in);
-//	$display("\t%m received flit contents %b",d_in);
+$display("%m received flit contents %b at t = %d",d_in, $realtime);
     mem[in_addr] = d_in;
    end
 
    begin // return results to TB
     tb_addr_out.Receive(out_addr); // this won't happen until Wrapped Memory  tells system_control "done" which in turn tells testbench "done"
     tb_data_out.Send(mem[out_addr]);
-//$display("%m sent a result to the testbench");
+$display("%m sent a result to the testbench at t = %d", $realtime);
    end
      
   join_any // effect: tb, wrapped memory can keeps going after memory loads

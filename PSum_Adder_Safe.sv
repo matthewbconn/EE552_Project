@@ -19,7 +19,7 @@ module Psum_Adder_Safe #(parameter DWIDTH = 8) (interface In0, interface In1, in
 	#FL;
 //$display("%m preparing to send an output value @ %d", $time);
 	Out.Send(SUM);
-$display("%m ghgh received %d th psums: PE0= %d, PE1= %d, PE2= %d = %d @ %d", j, Psum[0], Psum[1], Psum[2], SUM, $realtime);
+$display("\t%m received %d th psums: PE0= %d, PE1= %d, PE2= %d = %d @ %d", j, Psum[0], Psum[1], Psum[2], SUM, $realtime);
 //$display("%m completed send of an output value @ %d", $time);
 	#BL;
 	j = j + 1;

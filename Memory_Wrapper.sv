@@ -31,19 +31,19 @@ module Memory_Wrapper #(parameter DWIDTH = 8, parameter PWIDTH = 47)
 		index = i;
 		read_from_this_addr.Send(index);
 		read_data.Receive(flit_raw);		
-//		$display("\t%m received filter flit # %d contents %b",index, flit_raw);
+		$display("\t\t%m received filter flit # %d contents %b",index, flit_raw);
 		filt[23:16] = flit_raw;
 		
 		index = i+1;
 		read_from_this_addr.Send(index);
 		read_data.Receive(flit_raw);		
-//		$display("\t%m received filter flit # %d contents %b",index, flit_raw);
+		$display("\t\t%m received filter flit # %d contents %b",index, flit_raw);
 		filt[15:8] = flit_raw;
 		
 		index = i+2;
 		read_from_this_addr.Send(index);
 		read_data.Receive(flit_raw);		
-//		$display("\t%m received filter flit # %d contents %b",index, flit_raw);
+		$display("\t\t%m received filter flit # %d contents %b",index, flit_raw);
 		filt[7:0] = flit_raw;
 
 		if (i == 0) begin // Send to PE0
@@ -55,11 +55,11 @@ module Memory_Wrapper #(parameter DWIDTH = 8, parameter PWIDTH = 47)
 		end
 	//		      ifm/filt,      dest,         source,       data (upper 16b = x) 
 		packet = {ifm_filt,   Dest_Addr,   Source_Addr,    16'hFF , filt};
-//$display("%m sent packet (to dest %b) with contents %b", Dest_Addr, packet);
+$display("\t%m sent packet (to dest %b) with contents %b", Dest_Addr, packet);
 		Packet_2_NoC.Send(packet);
 	end // i loop
 
-$display("%m completed sends of all 3 pixel frames to NoC");
+$display("\t%m completed sends of all 3 pixel frames to NoC");
  
 	ifm_filt = 1;
 	// Get Pixels from mem, send into NoC
@@ -67,31 +67,31 @@ $display("%m completed sends of all 3 pixel frames to NoC");
 		index = i;
 		read_from_this_addr.Send(index);
 		read_data.Receive(flit_raw);
-//		$display("\t%m received pixel flit # %d contents %b",index, flit_raw);
+		$display("\t\t%m received pixel flit # %d contents %b",index, flit_raw);
 		pix[39:32] = flit_raw;
 
 		index = i+1;
 		read_from_this_addr.Send(index);
 		read_data.Receive(flit_raw);
-//		$display("\t%m received pixel flit # %d contents %b",index, flit_raw);
+		$display("\t\t%m received pixel flit # %d contents %b",index, flit_raw);
 		pix[31:24] = flit_raw;
 
 		index = i+2;
 		read_from_this_addr.Send(index);
 		read_data.Receive(flit_raw);
-//		$display("\t%m received pixel flit # %d contents %b",index, flit_raw);
+		$display("\t\t%m received pixel flit # %d contents %b",index, flit_raw);
 		pix[23:16] = flit_raw;
 
 		index = i+3;
 		read_from_this_addr.Send(index);
 		read_data.Receive(flit_raw);
-//		$display("\t%m received pixel flit # %d contents %b",index, flit_raw);
+		$display("\t\t%m received pixel flit # %d contents %b",index, flit_raw);
 		pix[15:8] = flit_raw;
 
 		index = i+4;
 		read_from_this_addr.Send(index);
 		read_data.Receive(flit_raw);
-//		$display("\t%m received pixel flit # %d contents %b",index, flit_raw);
+		$display("\t\t%m received pixel flit # %d contents %b",index, flit_raw);
 		pix[7:0] = flit_raw;
 
 		if (i == 9 || i == 24)  begin // Send to PE0
@@ -101,20 +101,21 @@ $display("%m completed sends of all 3 pixel frames to NoC");
 		end else begin // i == 19 ...Send to PE2
 			Dest_Addr = 0; // PE2 = 3'b000
 		end
-//$display("%m sending pixel frame %d to the NoC @ %d", pixel_frame_counter,$time);		
+$display("\t%m sending pixel frame %d to the NoC @ %d", pixel_frame_counter,$realtime);		
 	//		      ifm/filt,      dest,         source,       data
 		packet = {ifm_filt,   Dest_Addr,   Source_Addr,    pix};
+
 //$display("%m sending packet with pixels to dest: %b", Dest_Addr);		
 //$display("%m sent packet with contents %b", packet);
 		Packet_2_NoC.Send(packet);
-//$display("%m complted send of pixel frame %d to the NoC @ %d", pixel_frame_counter,$time);
+$display("\t%m complted send of pixel frame %d to the NoC @ %d", pixel_frame_counter,$realtime);
 pixel_frame_counter = pixel_frame_counter + 1;
 	end // i loop
 
-$display("%m completed sends of ALL pixels to NoC");
+$display("\t%m completed sends of ALL pixels to NoC");
 
 	// Get results back
-$display("Memory Wrapper getting results back:");
+$display("\tMemory Wrapper getting results back:");
 	for (i = 0; i < 9; i = i + 1) begin
 		Packet_from_NoC.Receive(packet);
 		result[i] = packet[DWIDTH-1:0];

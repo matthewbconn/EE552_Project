@@ -24,15 +24,15 @@ module P_PE #(parameter DWIDTH = 8, parameter PWIDTH = 47, parameter PE_Index = 
     if (PE_Index == 0) begin
 	This_PE_Addr = 3;//3b'011;
 	Next_PE_Addr = 1;//3b'001;
-	$display("PE 0 packetizer instantiated");
+	$display("\tPE 0 packetizer instantiated");
     end else if (PE_Index == 1) begin
 	This_PE_Addr = 1;//3b'001;
 	Next_PE_Addr = 0;//3b'000;
-	$display("PE 1 packetizer instantiated");
+	$display("\tPE 1 packetizer instantiated");
     end else if (PE_Index == 2) begin
 	This_PE_Addr = 0;//3b'000;
 	Next_PE_Addr = 3;//3b'011;
-	$display("PE 2 packetizer instantiated");
+	$display("\tPE 2 packetizer instantiated");
     end
 
     while (1) begin
@@ -45,7 +45,7 @@ module P_PE #(parameter DWIDTH = 8, parameter PWIDTH = 47, parameter PE_Index = 
 		packet = {IFM_one_FILT_zero,   Adder_Node_Addr,   This_PE_Addr,    32'hFFFF , Psum};
 		Out.Send(packet);
 		if (This_PE_Addr == 0) begin // debugging PE2
-		$display("%m sent out (relative) psum %d at time %d", i, $realtime);		
+		$display("\t%m sent out (relative) psum %d = %d at time %d", i, Psum,$realtime);		
 		end
 		#BL;
 	    end // for loop
@@ -58,7 +58,7 @@ module P_PE #(parameter DWIDTH = 8, parameter PWIDTH = 47, parameter PE_Index = 
 
 //	    if (it_counter < 2) begin // don't pass on filters once we're done
 	    Out.Send(packet);
-		$display("\t\t%m  XYXY PEaddr(%b)sending filters [%d,%d,%d] to next PEaddr(%b) at time %d", This_PE_Addr,filter_frame[23:16],filter_frame[15:8],filter_frame[7:0],Next_PE_Addr,$realtime);
+		$display("\t%m PEaddr(%b)sending filters [%d,%d,%d] to next PEaddr(%b) at time %d", This_PE_Addr,filter_frame[23:16],filter_frame[15:8],filter_frame[7:0],Next_PE_Addr,$realtime);
 		it_counter = it_counter + 1;
 //	    end
 	    #BL;

@@ -13,7 +13,7 @@ logic first_usage = 1;
 
 always begin
     Pixel_Frame_In.Receive(pixel_frame);
-$display("\t%m received pixels");
+$display("\t%m received pixels [%d %d %d %d %d] at time %d", single_pixel[4], single_pixel[3], single_pixel[2], single_pixel[1], single_pixel[0], $realtime);
     single_pixel[4] = pixel_frame[DWIDTH*5 - 1 : DWIDTH*4];
     single_pixel[3] = pixel_frame[DWIDTH*4 - 1 : DWIDTH*3];
     single_pixel[2] = pixel_frame[DWIDTH*3 - 1 : DWIDTH*2];
@@ -23,7 +23,7 @@ $display("\t%m received pixels");
 	if (first_usage == 1) begin // first time each PE uses pixelrow a specific # of times
 		first_usage = 0; // always use else branch after this
 		for (j = 0; j <= PEnum; j = j + 1) begin
-$display("%m pixels first_usage, iter. j = %d, at %d", j, $realtime);
+$display("\t%m pixels first_usage, iter. j = %d, at %d", j, $realtime);
 			for (i = 0; i < NUM_SENDS; i = i + 1) begin
 				#FL;
 				Pixel_Single_Out.Send(single_pixel[4-i]); // 4, then 3, then 2
@@ -36,7 +36,7 @@ $display("%m pixels first_usage, iter. j = %d, at %d", j, $realtime);
 		end // for J
 	end else begin // all other times, the PE uses each pixelrow 3 times (== height of CONV filter)
 		for (j = 0; j < 3; j = j + 1) begin
-$display("%m pixels not first_usage, iter. j = %d, at %d", j, $realtime);
+$display("\t%m pixels not first_usage, iter. j = %d, at %d", j, $realtime);
 			for (i = 0; i < NUM_SENDS; i = i + 1) begin
 				#FL;
 				Pixel_Single_Out.Send(single_pixel[4-i]); // 4, then 3, then 2

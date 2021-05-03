@@ -13,7 +13,7 @@ module P_adder #(parameter DWIDTH = 8, parameter PWIDTH = 47) (interface In, int
 	#FL;
 //		ifm/filt, dest. add = mem, sour. add. = safe adder, data (upper 32b = x) 
 	packet = {1'b1,      3'b110,              3'b100, 	     32'hFFFF , Psum};
-$display("Final Output %d Packetizer passing result = %d", counter, packet[DWIDTH-1:0]);
+$display("\tFinal Output %d Packetizer passing result = %d", counter, packet[DWIDTH-1:0]);
 	Out.Send(packet);
 	#BL;
 	counter = counter + 1;
